@@ -64,7 +64,7 @@ const LandingPage = () => {
             fill="currentColor"/>
         </svg>
       ),
-      features: ["Linear Search", "Binary Search", "Jump Search"]
+      features: ["Linear Search", "Binary Search"]
     },
     {
       title: "Sorting Algorithms",
