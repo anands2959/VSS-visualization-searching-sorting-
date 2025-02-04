@@ -1,0 +1,202 @@
+.algorithm-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.algorithm-info {
+  text-align: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(to right, #4a90e2, #357abd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.algorithm-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.algorithm-controls {
+  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto auto;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.algorithm-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  background: linear-gradient(to right, #4a90e2, #357abd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input-container {
+  position: relative;
+  width: 200px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4a90e2;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.search-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control-group label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
+.control-group input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 150px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  outline: none;
+}
+
+.control-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #4a90e2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.control-group input[type="range"]::-webkit-slider-thumb:hover {
+  background: #357abd;
+  transform: scale(1.1);
+}
+
+.control-group input[type="range"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-self: end;
+}
+
+.control-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.control-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-button.generate {
+  background: linear-gradient(to right, #4a90e2, #357abd);
+  color: white;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+.control-button.generate:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+}
+
+.control-button.start {
+  background: linear-gradient(to right, #2ecc71, #27ae60);
+  color: white;
+  box-shadow: 0 2px 8px rgba(46, 204, 113, 0.3);
+}
+
+.control-button.start:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.4);
+}
+
+.control-button.stop {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  color: white;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+.control-button.stop:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
