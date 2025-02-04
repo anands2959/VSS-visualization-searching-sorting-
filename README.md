@@ -2,7 +2,8 @@
 
 A modern, interactive web application for visualizing common computer science algorithms. This educational tool helps students and developers understand the inner workings of various searching and sorting algorithms through dynamic visualizations.
 
-![Algorithm Visualization Demo](./demo.gif)
+![Algorithm Visualization Demo](https://raw.githubusercontent.com/anands2959/VSS-visualization-searching-sorting-/refs/heads/main/src/assets/SS1.png)
+![Algorithm Visualization Demo](https://raw.githubusercontent.com/anands2959/VSS-visualization-searching-sorting-/refs/heads/main/src/assets/SS2.png)
 <!-- Add your demo gif or screenshot here -->
 
 ## Features
